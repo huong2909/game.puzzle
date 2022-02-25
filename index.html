@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+<img class="i1" id="image1" src="image/funny-cat1_part1x1.jpg" height="60" width="300" onclick="changerImage()"/>
+</body>
+</html>
+<script>
+    let image1 =document.getElementById("image1")
+    function changerImage() {
+        if(image1.src==='image/monkey_part1x1.jpg') {
+            image1.src = 'image/panda_swap_part1x1.jpg'
+        } else (image1.src=== 'image/panda_swap_part1x1.jpg') {
+            image1.src='image/monkey_part1x1.jpg'
+        }
+    }
+
+</script>
