@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+<form>
+<img  id="image1" src="image/funny-cat1_part1x1.jpg" height="60" width="300" onclick="changerImage1()"/><br>
+<img  id="image2" src="image/funny-cat1_part2x1.jpg" height="60" width="300" onclick="changerImage2()"/><br>
+<img  id="image3" src="image/funny-cat1_part3x1.jpg" height="60" width="300" onclick="changerImage3()"/><br>
+<img  id="image4" src="image/funny-cat1_part4x1.jpg" height="60" width="300" onclick="changerImage4()"/><br>
+<img  id="image5" src="image/funny-cat1_part5x1.jpg" height="60" width="300" onclick="changerImage5()"/><br>
+</form>
+</body>
+</html>
+<script>
+    let image1 =document.getElementById("image1")
+    var num1 = 1;// biến này dùng để đánh dấu đang ở ảnh số mấy
+    function changerImage1() {
+        if(num1===1){
+            image1.src  ='image/panda_swap_part1x1.jpg';
+            num1++;
+        }
+        else if(num1===2){
+            image1.src  ='image/monkey_part1x1.jpg';
+            num1++;
+        }
+        else if(num1===3){
+            image1.src='image/funny-cat1_part1x1.jpg';
+            num1=1
+        }
+        checkShadow()
+    }
+    let image2 =document.getElementById("image2")
+    var num2 = 1;// biến này dùng để đánh dấu đang ở ảnh số mấy
+    function changerImage2() {
+        if(num2===1){
+            image2.src  ='image/panda_swap_part2x1.jpg';
+            num2++;
+        }
+        else if(num2===2){
+            image2.src  ='image/monkey_part2x1.jpg';
+            num2++;
+        }
+        else if(num2===3){
+            image2.src='image/funny-cat1_part2x1.jpg';
+            num2=1
+        }
+        checkShadow()
+    }
+    let image3 =document.getElementById("image3")
+    var num3 = 1;// biến này dùng để đánh dấu đang ở ảnh số mấy
+    function changerImage3() {
+        if(num3===1){
+            image3.src  ='image/panda_swap_part3x1.jpg';
+            num3++;
+        }
+        else if(num3===2){
+            image3.src  ='image/monkey_part3x1.jpg';
+            num3++;
+        }
+        else if(num3===3){
+            image3.src='image/funny-cat1_part3x1.jpg';
+            num3=1
+        }
+        checkShadow()
+    }
+
+    let image4 =document.getElementById("image4")
+    var num4 = 1;// biến này dùng để đánh dấu đang ở ảnh số mấy
+    function changerImage4() {
+        if(num4===1){
+            image4.src  ='image/panda_swap_part4x1.jpg';
+            num4++;
+        }
+        else if(num4===2){
+            image4.src  ='image/monkey_part4x1.jpg';
+            num4++;
+        }
+        else if(num4===3){
+            image4.src='image/funny-cat1_part4x1.jpg';
+            num4=1
+        }
+        checkShadow()
+    }
+
+    let image5 =document.getElementById("image5")
+    var num5 = 1;// biến này dùng để đánh dấu đang ở ảnh số mấy
+    function changerImage5() {
+        if(num5===1){
+            image5.src  ='image/panda_swap_part5x1.jpg';
+            num5++;
+        }
+        else if(num5===2){
+            image5.src  ='image/monkey_part5x1.jpg';
+            num5++;
+        }
+        else if(num5===3){
+            image5.src='image/funny-cat1_part5x1.jpg';
+            num5=1
+        }
+        checkShadow()
+    }
+    function checkShadow(){
+        if(num1===num3&&num1===num2&&num1===num4&&num1===num5){
+            image1.style.boxShadow = "red 3px 3px 6px";
+            image2.style.boxShadow = "red 3px 3px 6px";
+            image3.style.boxShadow = "red 3px 3px 6px";
+            image4.style.boxShadow = "red 3px 3px 6px";
+            image5.style.boxShadow = "red 3px 3px 6px";
+        }else {
+            image1.style.boxShadow = "black 3px 3px 6px";
+            image2.style.boxShadow = "black 3px 3px 6px";
+            image3.style.boxShadow = "black 3px 3px 6px";
+            image4.style.boxShadow = "black 3px 3px 6px";
+            image5.style.boxShadow = "black 3px 3px 6px";
+        }
+    }
+</script>
